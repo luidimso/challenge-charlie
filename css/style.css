@@ -1,0 +1,51 @@
+body{
+  background-attachment: fixed;
+}
+
+main{
+  min-width: 360px;
+}
+
+#cabecalho{
+  background-color: rgba(105,105,105,0.7);
+  color: white;
+  font-weight: bolder;
+}
+
+#hoje{
+  background-color: rgba(105,105,105,0.7);
+  font-size: 200%;
+  color: white;
+  padding-bottom: 50px;
+}
+
+#hoje #temp_hoje{
+  font-size: 500%;
+}
+
+#hoje #temp_hoje:hover{
+  cursor: pointer;
+}
+
+#hoje #icone_hoje{
+  font-size: 1000%;
+  text-align: center;
+  margin-top: 0;
+  font-family: 'MeteoconsRegular';
+}
+
+#amanha{
+  background-color: rgba(105,105,105,0.8);
+  font-size: 200%;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#depois{
+  background-color: rgba(105,105,105,0.9);
+  font-size: 200%;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

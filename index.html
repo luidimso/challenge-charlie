@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Previsão do tempo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="meteocons-font/FONT/Font-face/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <main>
+      <div id="cabecalho" class="container">
+        <h1 id="local"></h1>
+
+        <div class="form-group">
+          <div class="input-group">
+            <input class="form-control" type="text" id="info_local" placeholder="Verificar o clima de outra cidade?">
+            <span class="input-group-btn">
+              <button class="btn btn-info" onclick="GetCidade(document.getElementById('info_local').value);">Ver clima</button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="hoje">
+        <div class="col-lg-8 col-md-8 col-sm-8">
+          <br><br> <p><b>HOJE</b></p>
+
+          <p id="temp_hoje" onclick="Converter();">-°C</p>
+          <p id="texto_hoje">-</p>
+          <p id="vento_hoje">Vento: - km/h</p>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <span id="icone_hoje">)</span>
+        </div>
+      </div>
+
+      <div class="container" id="amanha">
+        <div class="col-lg-9 col-md-9 col-sm-9">
+          <p><b>AMANHÃ</b></p>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <p id="max_amanha">Máxima: -°C</p>
+          <p id="min_amanha">Mínima: -°C</p>
+        </div>
+      </div>
+
+      <div class="container" id="depois">
+        <div class="col-lg-9 col-md-9 col-sm-9">
+          <p><b>DEPOIS DE AMANHÃ</b></p>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <p id="max_depois">Máxima: -°C</p>
+          <p id="min_depois">Mínima: -°C</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

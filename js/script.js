@@ -300,6 +300,26 @@ function Converter(){
     var temp_hoje = document.getElementById("temp_hoje").innerHTML.replace("°C", "");
     var temp_hoje = parseInt(temp_hoje);
     document.getElementById("temp_hoje").innerHTML = Math.round((9*temp_hoje + 160)/5, 1) + "°F";
+      
+    var max_amanha = document.getElementById("max_amanha").innerHTML.replace("°C", "");
+    var max_amanha = max_amanha.replace("Máxima: ", "");  
+    var max_amanha = parseInt(max_amanha);
+    document.getElementById("max_amanha").innerHTML = "Máxima: " + Math.round((9*max_amanha + 160)/5, 1) + "°F";
+      
+    var min_amanha = document.getElementById("min_amanha").innerHTML.replace("°C", "");
+    var min_amanha = min_amanha.replace("Mínima: ", "");  
+    var min_amanha = parseInt(min_amanha);
+    document.getElementById("min_amanha").innerHTML = "Mínima: " + Math.round((9*min_amanha + 160)/5, 1) + "°F";
+      
+    var max_depois = document.getElementById("max_depois").innerHTML.replace("°C", "");
+    var max_depois = max_depois.replace("Máxima: ", "");  
+    var max_depois = parseInt(max_depois);
+    document.getElementById("max_depois").innerHTML = "Máxima: " + Math.round((9*max_depois + 160)/5, 1) + "°F";
+      
+    var min_depois = document.getElementById("min_depois").innerHTML.replace("°C", "");
+    var min_depois = min_depois.replace("Mínima: ", "");  
+    var min_depois = parseInt(min_depois);
+    document.getElementById("min_depois").innerHTML = "Mínima: " + Math.round((9*min_depois + 160)/5, 1) + "°F";  
     return;
   }
 
@@ -307,6 +327,26 @@ function Converter(){
     var temp_hoje = document.getElementById("temp_hoje").innerHTML.replace("°F", "");
     var temp_hoje = parseInt(temp_hoje);
     document.getElementById("temp_hoje").innerHTML = Math.round((5*temp_hoje - 160)/9, 1) + "°C";
+      
+    var max_amanha = document.getElementById("max_amanha").innerHTML.replace("°F", "");
+    var max_amanha = max_amanha.replace("Máxima: ", "");  
+    var max_amanha = parseInt(max_amanha);
+    document.getElementById("max_amanha").innerHTML = "Máxima: " + Math.round((5*max_amanha - 160)/9, 1) + "°C";
+      
+    var min_amanha = document.getElementById("min_amanha").innerHTML.replace("°F", "");
+    var min_amanha = min_amanha.replace("Mínima: ", "");  
+    var min_amanha = parseInt(min_amanha);
+    document.getElementById("min_amanha").innerHTML = "Mínima: " + Math.round((5*min_amanha - 160)/9, 1) + "°C";
+      
+    var max_depois = document.getElementById("max_depois").innerHTML.replace("°F", "");
+    var max_depois = max_depois.replace("Máxima: ", "");  
+    var max_depois = parseInt(max_depois);
+    document.getElementById("max_depois").innerHTML = "Máxima: " + Math.round((5*max_depois - 160)/9, 1) + "°C";
+      
+    var min_depois = document.getElementById("min_depois").innerHTML.replace("°F", "");
+    var min_depois = min_depois.replace("Mínima: ", "");  
+    var min_depois = parseInt(min_depois);
+    document.getElementById("min_depois").innerHTML = "Mínima: " + Math.round((5*min_depois - 160)/9, 1) + "°C";  
     return;
   }
 }
